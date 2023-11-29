@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodie Vilas</title>
+        
+        <!-- Page Icon -->
+        <link rel="Micosoft icon" href="assets/images/foodie-logo.png">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+              integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+              crossorigin="anonymous" />
+    
+        <!-- Style Sheets -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+       
+        <!-- Sweet Alert Pop Modal -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <form class="modal-form grid py-1 text-center" id="signIn-form" action="/login" method="post">
+        <header class="navbar" id="preview-navbar">
+            <div class="container flex text-center jc-ai-center">
+                <!-- Left Navigation -->
+                <div class="site-title flex align-item-center">
+                    <div>
+                        <a href="/index"><h1><span class="clr-red">Foodie</span> <span class="clr-green">Vilas</span></h1></a>
+                    </div>
+                    <!-- Toggle Bars -->
+                    <div class="toggle-bars mybar">
+                        <div class="bars bar-1"></div>
+                        <div class="bars bar-2"></div>
+                        <div class="bars bar-3"></div>
+                    </div>
+                </div>
+                <!-- Right Navigation -->
+                <nav class="site-nav flex left-nav align-item-center">                
+                    <ul class="flex">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="login-modal"><!-- Comes From Js File --></section>
+        <div class="modal-container">
+            <!-- Written Stuff -->
+            <div class="modal-content">
+                <div class="md">Welcome back!</div>
+            </div>
+           
+                <input type="text" placeholder="Roll No" name="rno" required>
+                <input type="text" placeholder="Password" name="pwd" required>
+    
+                <button type="submit" class="btn">Login</button>
+            
+            
+        </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Vilas</title>
+    
+    <!-- Page Icon -->
+    <link rel="icon" href="assets/images/foodie-logo.png">
+    
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="navbar" id="preview-navbar">
+        <form class="modal-form grid py-1 text-center" id="main-form" method="post" action="/register" required>
+            <div class="container flex text-center jc-ai-center">
+                <div class="site-title flex align-item-center">
+                    <div>
+                        <a href="index.html"><h1><span class="clr-red">Foodie</span> <span class="clr-green">Vilas</span></h1></a>
+                    </div>
+                    <div class="toggle-bars mybar">
+                        <div class="bars bar-1"></div>
+                        <div class="bars bar-2"></div>
+                        <div class="bars bar-3"></div>
+                    </div>
+                </div>
+                <nav class="site-nav flex left-nav align-item-center">                
+                    <ul class="flex">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </form>
+    </header>
+    <div class="modal-container">
+        <!-- Written Stuff -->
+        <div class="modal-content">
+            <div class="md">Welcome to <br><span class="clr-red md">Foodie</span> <span class="clr-green md">Vilas</span></div>
+        </div>
+        <!-- Registration Form -->
+        <form class="modal-form">
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="text" placeholder="Roll Number"  name="rno" required>
+            <input type="text" placeholder="Password" name="pwd" required>
+            <input type="text" placeholder="Mobile Number"  name="phno" required>
+            <button type="submit">Register</button>
+        </form>
+        <!-- Remember Me CheckBox -->
+        <a href="/login" id="admin-login" class="text-center">Already have an account? Login</a>
+        <!-- Written Stuff -->
+    </div>
+</body>
+</html>
